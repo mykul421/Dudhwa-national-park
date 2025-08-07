@@ -6,32 +6,31 @@
   <title>Dudhwa National Park</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
     body {
       font-family: 'Montserrat', sans-serif;
-      background-color: #f4f7f5;
-      color: #2c3e2f;
+      background-color: #f0f8f5;
+      color: #2e3d2f;
     }
     header {
-      background: url('https://images.unsplash.com/photo-1558981001-0b7c371f6ba2') no-repeat center center/cover;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)),
+                  url('https://images.unsplash.com/photo-1573739580606-c0f94e7c47cd') no-repeat center center/cover;
       height: 100vh;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      color: white;
+      flex-direction: column;
+      color: #fff;
       text-align: center;
     }
     header h1 {
       font-size: 4rem;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 20px;
-      border-radius: 10px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px #000;
+    }
+    header p {
+      font-size: 1.5rem;
+      text-shadow: 1px 1px 5px #000;
     }
     nav {
       background-color: #2c5c36;
@@ -67,7 +66,9 @@
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       text-align: center;
+      transition: transform 0.3s;
     }
+    .card:hover { transform: scale(1.03); }
     .card img {
       height: 60px;
       margin-bottom: 15px;
@@ -105,7 +106,8 @@
 <body>
 
 <header>
-  <h1>Welcome to Dudhwa National Park</h1>
+  <h1>Dudhwa National Park</h1>
+  <p>Where Nature Roars and Wilderness Thrives</p>
 </header>
 
 <nav>
@@ -117,7 +119,7 @@
 
 <section id="about">
   <h2>About the Park</h2>
-  <p>Dudhwa National Park is a paradise of biodiversity located in the Terai region of Uttar Pradesh, India. Rich in flora and fauna, it is home to tigers, elephants, swamp deer, and over 450 bird species.</p>
+  <p>Nestled in the Terai region of Uttar Pradesh, Dudhwa National Park is a haven for nature lovers. Home to tigers, elephants, swamp deer, and a vibrant variety of bird species, this forest gem is an ecological paradise that blends rich biodiversity with scenic tranquility.</p>
 </section>
 
 <section id="wildlife">
@@ -125,18 +127,18 @@
   <div class="cards">
     <div class="card">
       <img src="https://img.icons8.com/ios-filled/100/forest.png" alt="Forest Icon"/>
-      <h3>Dense Forest</h3>
-      <p>Explore the lush sal forests, grasslands, and wetlands that make up the Dudhwa ecosystem.</p>
+      <h3>Thick Forest Trails</h3>
+      <p>Walk amidst dense sal and grasslands echoing with the sounds of nature.</p>
     </div>
     <div class="card">
       <img src="https://img.icons8.com/ios-filled/100/elephant.png" alt="Elephant Icon"/>
-      <h3>Wildlife Safari</h3>
-      <p>Experience elephant and jeep safaris through the park for close encounters with majestic animals.</p>
+      <h3>Jeep & Elephant Safari</h3>
+      <p>Encounter majestic elephants and elusive tigers in their natural habitat.</p>
     </div>
     <div class="card">
       <img src="https://img.icons8.com/ios-filled/100/bird.png" alt="Bird Icon"/>
       <h3>Bird Watching</h3>
-      <p>A heaven for bird lovers, with species like sarus cranes, owls, and hornbills.</p>
+      <p>Discover over 450 species of birds, including migratory and rare beauties.</p>
     </div>
   </div>
 </section>
@@ -144,10 +146,10 @@
 <section id="gallery">
   <h2>Gallery</h2>
   <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1573739580606-c0f94e7c47cd" alt="Tiger">
+    <img src="https://images.unsplash.com/photo-1556012018-3ba14e4080e0" alt="Tiger">
+    <img src="https://images.unsplash.com/photo-1598514982727-51a7b8679271" alt="Deer in Forest">
     <img src="https://images.unsplash.com/photo-1572177818736-57fe6b20c535" alt="Elephants">
-    <img src="https://images.unsplash.com/photo-1598514982727-51a7b8679271" alt="Deer">
-    <img src="https://images.unsplash.com/photo-1556012018-3ba14e4080e0" alt="Jungle">
+    <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb" alt="Forest Canopy">
   </div>
 </section>
 
